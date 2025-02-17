@@ -60,13 +60,16 @@ for (let i = 0; i < buttonValues.length; i++) {
 
         else { //numbers or .
             if (value == ".") {
+                if (display.value != "" && !display.value.includes(value)){
+                    display.value += value;
+                }
 
             }
 
             else if (display.value == "0") {
                 display.value = value;
             }
-            
+
             else { 
                 display.value += value;
             }
