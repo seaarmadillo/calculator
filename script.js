@@ -55,6 +55,17 @@ for (let i = 0; i < buttonValues.length; i++) {
         }
 
         else if (topSymbols.includes(value)){
+            if (value == "AC") {
+
+            }
+            else if (value == "+/-" ) {
+
+            }
+            else if (value == "%") {
+                display.value = Number(display.value) / 100;
+
+            }
+              
 
         }
 
