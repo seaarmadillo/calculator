@@ -57,6 +57,15 @@ for (let i = 0; i < buttonValues.length; i++) {
 
     button.addEventListener("click", function() {
         if (rightSymbols.includes(value)) {
+            if (value == "="){
+
+            }
+            else {
+                operator = value;
+                A = display.value;
+                display.value = "";
+
+            }
 
         }
 
