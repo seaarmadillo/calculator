@@ -19,6 +19,12 @@ let A = 0;
 let operator = null;
 let B = null;
 
+function clearAll() {
+    A = 0;
+    operator = null;
+    B = null;
+
+}
 
 for (let i = 0; i < buttonValues.length; i++) {
     //<button></button>
@@ -56,6 +62,8 @@ for (let i = 0; i < buttonValues.length; i++) {
 
         else if (topSymbols.includes(value)){
             if (value == "AC") {
+                clearAll();
+                display.value = "";
 
             }
             else if (value == "+/-" ) {
