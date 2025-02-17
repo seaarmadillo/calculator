@@ -9,6 +9,17 @@ const buttonValues = [
 const rightSymbols = ["÷", "x", "-", "+", "="];
 const topSymbols = ["AC", "+/-", "%"];
 
+const display = document.getElementById("display");
+
+
+
+//A+B, A*B, A-B, A/B
+
+let A = 0;
+let operator = null;
+let B = null;
+
+
 for (let i = 0; i < buttonValues.length; i++) {
     //<button></button>
     let value = buttonValues[i];
@@ -33,6 +44,39 @@ for (let i = 0; i < buttonValues.length; i++) {
         button.style.color = "#0C1618"
     }
 
+
+
+    //process button clicks
+
+
+    button.addEventListener("click", function() {
+        if (rightSymbols.includes(value)) {
+
+        }
+
+        else if (topSymbols.includes(value)){
+
+        }
+
+        else { //numbers or .
+            if (value == ".") {
+
+            }
+
+            else if (display.value == "0") {
+                display.value = value;
+            }
+            
+            else { 
+                display.value += value;
+            }
+
+        }
+
+
+
+        
+    });
 //add buttons to div
     document.getElementById("buttons").appendChild(button);
 }
